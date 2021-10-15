@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <!-- 숫자를 선택하는 피커 생성 -->
+    <!-- -->
+
     <NumberPicker
         android:id="@+id/numberPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="196dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"/>
-    <!-- -->
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addButton"
@@ -36,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addButton"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
-
+    <!-- Constraint Layout 안에 Linear -->
     <LinearLayout
         app:layout_constraintTop_toBottomOf="@+id/addButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +53,11 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:text="1"
+            android:background="@drawable/one_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -61,6 +68,11 @@
             android:textStyle="bold"
             android:layout_margin="5dp"
             android:text="1"
+            android:background="@drawable/one_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -70,6 +82,11 @@
             android:textStyle="bold"
             android:layout_margin="5dp"
             android:text="1"
+            android:background="@drawable/one_red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -79,6 +96,11 @@
             android:textStyle="bold"
             android:layout_margin="5dp"
             android:text="1"
+            android:background="@drawable/one_gray"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -88,6 +110,25 @@
             android:textStyle="bold"
             android:layout_margin="5dp"
             android:text="1"
+            android:background="@drawable/one_gray"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TextView6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="1"
+            android:background="@drawable/one_gray"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
